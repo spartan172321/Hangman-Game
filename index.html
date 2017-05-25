@@ -17,19 +17,22 @@
   <header>
     <h1>Hangman</h1>
     <h3>Guess the Nintendo Character!</h3>
+    <br>
+    <h3>Press any key to start</h3>
   </header>
     
   <div class="container-fluid text-center">    
     <div class="row content">
       <div class="col-sm-8 text-left">
-        <!-- Button to start game -->
-        <button type="button" class="btn btn-success">Click to Start</button>
         <br><hr><br>
         <!-- Displays the word blanks -->
-        <pre class="col-sm-4 text-center" id="name"></pre>
+        <pre class="col-sm-6 text-center" id="name"> </pre>
       </div>
 
       <div class="col-sm-4">
+        <div class="well well-sm">
+          <p>Wins: <span id="wins">0</span></p>
+        </div>
         <div class="well well-sm">
           <p>Guesses Left: <span id="guesses_left">6</span></p>
         </div>
@@ -41,7 +44,7 @@
   </div>
 
   <footer class="container-fluid text-center">
-    <p>Footer Text</p>
+    <p>Copyright &copy; 2016 Cheng Rong</p>
   </footer>
 
 <!-- links javascript -->
