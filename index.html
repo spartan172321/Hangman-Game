@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- links personal stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+
+	<title>Hangman</title>
+</head>
+
+<!-- What is displayed on the webpage -->
+<body>
+
+  <header>
+    <h1>Hangman</h1>
+    <h3>Guess the Nintendo Character!</h3>
+  </header>
+    
+  <div class="container-fluid text-center">    
+    <div class="row content">
+      <div class="col-sm-8 text-left">
+        <!-- Button to start game -->
+        <button type="button" class="btn btn-success">Click to Start</button>
+        <br><hr><br>
+        <!-- Displays the word blanks -->
+        <pre class="col-sm-4 text-center" id="name"></pre>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="well well-sm">
+          <p>Guesses Left: <span id="guesses_left">6</span></p>
+        </div>
+        <div class="well well-lg">
+          <p>Letters Guessed: <span id="guessed_letters"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <p>Footer Text</p>
+  </footer>
+
+<!-- links javascript -->
+  <script src="assets/javascript/game.js" type="text/javascript"></script>
+</body>
+</html>
